@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta content="text/html; charset=UTF-8" http-equiv="contenttype">
+    <title>Registro de Cliente</title>
+  </head>
+  <body>
+    <h1>Registro de Clientes</h1>
+    <form id="form" name="form" method="post" action="gracias.html">
+      <table style="align:center; background-color:lightgreen;
+border-color:black; border-collapse: collapse; width:300px;height:180px;" border="1">
+        <tbody>
+          <tr>
+            <td>Rut empresa:</td>
+            <td><input name="rut" placeholder="Ingrese el rut de la empresa" required=""
+
+                style="width: 200px;" type="number"></td>
+          </tr>
+          <tr>
+            <td>Nombres empresa:</td>
+            <td><input name="nombre" placeholder="Ingrese el
+ nombre de la empresa" style="width: 200px;" type="text"></td>
+          </tr>
+          <tr>
+            <td>Nombre y Apellidos:</td>
+            <td><input name="apellido" placeholder="Ingrese
+ su nombre y Apellidos" style="width: 200px;" type="text"></td>
+          </tr>
+          <tr>
+            <td>Direccion:</td>
+            <td><textarea cols="30" rows="5" name="area" placeholder="Ingrese su Direccion"></textarea></td>
+          </tr>
+          <tr>
+            <td><input name="Submit" value="Enviar" type="submit"></td>
+            <td><input name="Submit2" value="Limpiar" type="reset"></td>
+          </tr>
+        </tbody>
+      </table>
+    </form>
+  </body>
+</html>

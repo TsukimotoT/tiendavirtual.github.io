@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>clientes</title>
+  </head>
+  <body>
+    <table style="background-color: lightgreen; border-collapse: collapse; width: 347px; height: 369px;"
+      border="1">
+      <tbody>
+        <tr>
+          <th>Rut empresa</th>
+          <th>Nombre empresa</th>
+          <th>Nombre y apellido</th>
+          <th>Direccion</th>
+        </tr>
+        <tr>
+          <td>77.070.777-1</td>
+          <td>Funeraria aurora</td>
+          <td>Luis Moya</td>
+          <td>Isla portezuelo 516, pudahuel</td>
+        </tr>
+        <tr>
+          <td>76.060.666-1</td>
+          <td>Funeraria hogar de cristo</td>
+          <td>Alberto Hurtado</td>
+          <td>Bezanilla 1240, Independencia </td>
+        </tr>
+        <tr>
+          <td>75.050.555-1</td>
+          <td>Funeraria espiritu santo</td>
+          <td>Alberto Hurtado</td>
+          <td>Av. Independencia 1084, Independencia</td>
+        </tr>
+        <tr>
+          <td>74.040.444-1</td>
+          <td>Funeraria Providencia</td>
+          <td>Juan Perez</td>
+          <td>Av. Francisco de Bilbao 759, Providencia</td>
+        </tr>
+      </tbody>
+    </table>
+  </body>
+</html>

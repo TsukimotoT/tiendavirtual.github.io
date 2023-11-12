@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Preguntas frecuentes</title>
+  </head>
+  <body>
+    <table style="background-color: lightgreen; border-collapse: collapse; width: 347px; height: 369px;"
+
+      border="1">
+      <tbody>
+        <tr>
+          <th>¿Como se realiza la entrega del producto?</th>
+           <th>¿Cuanto tiempo demora mi pedido?</th>
+        </tr>
+        <tr>
+          <th>La entrega del producto se puede hacer con retiro o con despacho, este no tiene un coste adicional.</th>
+         <th>El tiempo de entrega es variado dependiendo de la cantidad de compra, este tiempo se puede acordar al momento de realizar el pedido.</th>
+        </tr>
+      </tbody>
+    </table>
+    
+  </body>
+</html>

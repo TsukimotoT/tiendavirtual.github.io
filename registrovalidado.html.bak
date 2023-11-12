@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=windows-1252">
+    <meta content="text/html; charset=UTF-8" http-equiv="contenttype">
+    <title>Registro de Cliente</title>
+    <script type="text/javascript">
+			function validarFormulario() {
+        var r = document.forms["form"]["rut"].value;
+        if( r == null || r == "" || r == " "){
+          alert("Debe llenar todos los campos");
+          return false;
+        }
+        
+        var n = document.forms["form"]["nombre empresa"].value;
+        if( n == null || n == "" || n == " "){
+          alert("Debe llenar todos los campos");
+          return false;
+        }
+        
+        var a = document.forms["form"]["nombre y apellido"].value;
+        if( a == null || a == "" || a == " "){
+          alert("Debe llenar todos los campos");
+          return false;
+        }
+        
+        var s = document.forms["form"]["direccion"].value;
+        if( s == null || s == "" || s == " "){
+          alert("Debe llenar todos los campos");
+          return false;
+        }
+        var m = document.forms["form"]["clave"].value;
+ 				if (m == null || m == "" || m == " ") {
+ 				alert("Debe llenar todos los campos");
+ 				return false;
+ 				}
+
+    }   
+		</script>
+  </head>
+  <body>
+    <h1>Registro de Clientes</h1>
+    <form id="form" name="form" method="post" action="guardar.php" onsubmit="return validarFormulario()">
+      <table style="align:center; background-color:lightgreen;
+border-color:black; border-collapse: collapse; width:300px;height:180px;" border="1">
+        <tbody>
+          <tr>
+            <td>Rut empresa:</td>
+            <td><input name="rut" placeholder="Ingrese el rut de la empresa" required=""
+
+                style="width: 200px;" type="number"></td>
+          </tr>
+          <tr>
+            <td>Nombres empresa:</td>
+            <td><input name="nombre_empresa" placeholder="Ingrese el
+ nombre de la empresa" style="width: 200px;" required="" type="text"></td>
+          </tr>
+          <tr>
+            <td>Nombre y Apellidos:</td>
+            <td><input name="nombre_y_apellido" placeholder="Ingrese
+ su nombre y Apellidos" style="width: 200px;" required="" type="text"></td>
+          </tr>
+          <tr>
+            <td>Direccion:</td>
+            <td><textarea cols="30" rows="5" name="direccion" placeholder="Ingrese su Direccion"
+
+required=""></textarea></td>
+          </tr>
+          <tr>
+            <td>Password:</td>
+            <td><input name="clave" placeholder="Ingrese su
+ Password" type="text"></td>
+          </tr>
+          <tr>
+            <td><input name="Submit" value="Enviar" type="submit"></td>
+            <td><input name="Submit2" value="Limpiar" type="reset"></td>
+          </tr>
+        </tbody>
+      </table>
+    </form>
+  </body>
+</html>

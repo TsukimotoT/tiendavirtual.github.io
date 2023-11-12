@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <title>Registro de Cliente</title>
+    <script type="text/javascript">
+function validarformulario() {
+ var r = document.forms["form1"]["rut"].value;
+ if (r == null || r == "" || r == " ") {
+ alert("Debe llenar todos los campos");
+ return false;
+ }
+ var n = document.forms["form1"]["password"].value;
+ if (n == null || n == "" || n == " ") {
+ alert("Debe llenar todos los campos");
+ return false;
+ }
+}
+</script> </head>
+  <body>
+    <h1>Inicio de Sesión</h1>
+    <form id="form1" name="form1" method="post" action="sesion.php" onsubmit="return validarformulario()">
+      <table style="align:center; background-color:lightgreen;
+border-color:black; border-collapse: collapse; width:300px;height:150px;" border="1">
+        <tbody>
+          <tr>
+            <td>Rut empresa:</td>
+            <td><input name="rut" placeholder="Ingrese su RUT" required="" type="number"></td>
+          </tr>
+          <tr>
+            <td>Password:</td>
+            <td><input name="clave" placeholder="Ingrese su Password" type="text"></td>
+          </tr>
+          <tr>
+            <td><input name="Submit" value="Enviar" type="submit"></td>
+            <td><input name="Submit2" value="Limpiar" type="reset"></td>
+          </tr>
+        </tbody>
+      </table>
+    </form>
+  </body>
+</html>

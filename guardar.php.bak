@@ -1,0 +1,31 @@
+<?php
+// Se reciben los datos a través del método POST y son asignados a variables
+$rut = $_POST["rut"];
+$nombreEmpresa = $_POST["nombre_empresa"]; // Cambiado a nombre_empresa
+$nombreYApellido = $_POST["nombre_y_apellido"]; // Cambiado a nombre_y_apellido
+$direccion = $_POST["direccion"];
+$clave = $_POST["clave"];
+// Se establece conexión a la Base de Datos de MySQL
+$servername = "localhost";
+$username = "root";
+$password = "";
+// Aquí se indica el nombre de la Base de Datos que se selecciona
+$bd = "tiendavirtual";
+$conexion = new mysqli($servername, $username, $password, $bd);
+// Si se genera un error se advierte del mismo al usuario.
+if ($conexion->connect_error) {
+    die("Conexión Fallida: " . $conexion->connect_error); // Corregido conn a conexion
+}
+// Se genera el query con los datos que se asignaron en las variables
+$sql = "insert into cliente(rut, nombre_empresa, nombre_y_apellido, direccion, password) 
+        VALUES ('".$rut."', '".$nombreEmpresa."', '".$nombreYApellido."', '".$direccion."', '".$clave."')";
+// Se ejecuta el query
+if ($conexion->query($sql) === TRUE) {
+    echo "<h1>Registro Exitoso.  Ahora puede iniciar sesión.</h1>";
+} else {
+    echo "Error: " . $sql . "<br>" . $conexion->error;
+}
+// Se cierra la conexión a la Base de Datos.
+$conexion->close();
+?>
+

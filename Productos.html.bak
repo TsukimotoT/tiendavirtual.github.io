@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Productos</title>
+  </head>
+  <body>
+    <table style="background-color: lightgreen; border-collapse: collapse; width: 347px; height: 369px;"
+
+      border="1">
+      <tbody>
+        <tr>
+          <th>Nombre ataud</th>
+          <th>madera</th>
+          <th>precio</th>
+        </tr>
+        <tr>
+          <td>Oregon</td>
+          <td>Pino oregon</td>
+          <td> $380.000</td>
+        </tr>
+        <tr>
+          <td>Castaño</td>
+          <td>Castaño </td>
+          <td>$450.000</td>
+        </tr>
+        <tr>
+          <td>Pino</td>
+          <td>Pino</td>
+          <td>$220.000</td>
+        </tr>
+        <tr>
+          <td>terciado</td>
+          <td>terciado</td>
+          <td>$150.000</td>
+        </tr>
+      </tbody>
+    </table>
+    
+  </body>
+</html>

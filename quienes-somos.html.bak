@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <title>Informacion</title>
+  </head>
+  <body>
+    <table style="background-color: lightgreen; border-collapse: collapse; width: 347px; height: 369px;"
+
+      border="1">
+      <tbody>
+        <tr>
+          <th>¿Quienes somos?</th>
+          <th>¿Que frabicamos?</th>
+        </tr>
+        <tr>
+          <td>Somos una empresa familiar con muchos años de experiencia y
+            ofrecemos una excelente calidad en nuestros productos. </td>
+          <td>La empresa fabrica distintos tipos de ataudes para vender a las
+            funerarias.</td>
+        </tr>
+      </tbody>
+    </table>
+  </body>
+</html>
